@@ -1,0 +1,234 @@
+EESchema Schematic File Version 4
+LIBS:BAR30-SENSOR-cache
+EELAYER 30 0
+EELAYER END
+$Descr User 11693 8660
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BAR30-SENSOR-eagle-import:MS583730BA U2
+U 1 1 BABD3B23
+P 4500 4250
+F 0 "U2" H 4200 4670 59  0000 L BNN
+F 1 "MS583730BA" H 4200 4150 59  0000 L BNN
+F 2 "BAR30-SENSOR:MS5837" H 4500 4250 50  0001 C CNN
+F 3 "" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAR30-SENSOR-eagle-import:FRAME-BLUEROBOTICS #FRAME1
+U 1 1 D2C66578
+P 1000 7800
+F 0 "#FRAME1" H 1000 7800 50  0001 C CNN
+F 1 "Pressure Sensor, Supply, and Conns" H 1069 8059 85  0000 L BNN
+F 2 "" H 1000 7800 50  0001 C CNN
+F 3 "" H 1000 7800 50  0001 C CNN
+	1    1000 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAR30-SENSOR-eagle-import:FRAME-BLUEROBOTICS #FRAME1
+U 2 1 D2C66574
+P 6800 7800
+F 0 "#FRAME1" H 6800 7800 50  0001 C CNN
+F 1 "Pressure Sensor, Supply, and Conns" H 6869 8059 85  0000 L BNN
+F 2 "" H 6800 7800 50  0001 C CNN
+F 3 "" H 6800 7800 50  0001 C CNN
+	2    6800 7800
+	1    0    0    -1  
+$EndComp
+Text Notes 4550 3600 0    85   ~ 0
+MS5837-30BA
+Text Notes 3500 1500 0    85   ~ 0
+Power Supply
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5CEAEDFC
+P 2700 4150
+F 0 "J1" H 2673 4030 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 2673 4121 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2700 4150 50  0001 C CNN
+F 3 "~" H 2700 4150 50  0001 C CNN
+	1    2700 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L BAR30-SENSOR-eagle-import:GND #GND0101
+U 1 1 5CEAEF04
+P 1900 4150
+F 0 "#GND0101" H 1900 4150 50  0001 C CNN
+F 1 "GND" H 1800 4050 59  0000 L BNN
+F 2 "" H 1900 4150 50  0001 C CNN
+F 3 "" H 1900 4150 50  0001 C CNN
+	1    1900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4150 2200 4150
+Text GLabel 2200 4150 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	2500 4250 2200 4250
+Text GLabel 2200 4250 0    50   Input ~ 0
+SDA
+$Comp
+L BAR30-SENSOR-eagle-import:GND #GND0102
+U 1 1 5CEB1332
+P 4000 4250
+F 0 "#GND0102" H 4000 4250 50  0001 C CNN
+F 1 "GND" H 3900 4150 59  0000 L BNN
+F 2 "" H 4000 4250 50  0001 C CNN
+F 3 "" H 4000 4250 50  0001 C CNN
+	1    4000 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 4150 2    50   Input ~ 0
+SCL
+Text GLabel 5000 3950 2    50   Input ~ 0
+SDA
+Text GLabel 2150 3950 0    50   Input ~ 0
+VIN
+$Comp
+L Device:R R1
+U 1 1 5CEADC2F
+P 6250 3650
+F 0 "R1" H 6320 3696 50  0000 L CNN
+F 1 "R" H 6320 3605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6180 3650 50  0001 C CNN
+F 3 "~" H 6250 3650 50  0001 C CNN
+	1    6250 3650
+	0    1    1    0   
+$EndComp
+Text GLabel 6400 3650 2    50   Input ~ 0
+3V3
+Text GLabel 6100 3650 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R R2
+U 1 1 5CEAE4D9
+P 6250 4000
+F 0 "R2" H 6320 4046 50  0000 L CNN
+F 1 "R" H 6320 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6180 4000 50  0001 C CNN
+F 3 "~" H 6250 4000 50  0001 C CNN
+	1    6250 4000
+	0    1    1    0   
+$EndComp
+Text GLabel 6400 4000 2    50   Input ~ 0
+3V3
+Text GLabel 6100 4000 0    50   Input ~ 0
+SCL
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5D8BE1E4
+P 4950 5150
+F 0 "J2" H 4978 5176 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 4978 5085 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4950 5150 50  0001 C CNN
+F 3 "~" H 4950 5150 50  0001 C CNN
+	1    4950 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 3950 0    50   Input ~ 0
+3V3
+Text GLabel 3550 5150 0    50   Input ~ 0
+VIN
+$Comp
+L BAR30-SENSOR-eagle-import:GND #GND0103
+U 1 1 5D8C200D
+P 3050 5150
+F 0 "#GND0103" H 3050 5150 50  0001 C CNN
+F 1 "GND" H 2950 5050 59  0000 L BNN
+F 2 "" H 3050 5150 50  0001 C CNN
+F 3 "" H 3050 5150 50  0001 C CNN
+	1    3050 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 5250 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	4750 5250 4700 5250
+$Comp
+L Device:D D1
+U 1 1 5D8CEFE2
+P 3950 5150
+F 0 "D1" H 3950 4934 50  0000 C CNN
+F 1 "D" H 3950 5025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp" H 3950 5150 50  0001 C CNN
+F 3 "~" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L BAR30-SENSOR-eagle-import:C-EUC0402 C1
+U 1 1 5D8D8E69
+P 4200 5250
+F 0 "C1" H 4260 5265 59  0000 L BNN
+F 1 "1uF" H 4260 5065 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4200 5250 50  0001 C CNN
+F 3 "" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5150 4200 5150
+Wire Wire Line
+	4750 5150 4200 5150
+Connection ~ 4200 5150
+Wire Wire Line
+	3800 5150 3550 5150
+Wire Wire Line
+	3050 5050 4750 5050
+$Comp
+L BAR30-SENSOR-eagle-import:GND #GND0104
+U 1 1 5D8DCFF5
+P 4200 5550
+F 0 "#GND0104" H 4200 5550 50  0001 C CNN
+F 1 "GND" H 4100 5450 59  0000 L BNN
+F 2 "" H 4200 5550 50  0001 C CNN
+F 3 "" H 4200 5550 50  0001 C CNN
+	1    4200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAR30-SENSOR-eagle-import:C-EUC0402 C2
+U 1 1 5D8E311E
+P 4700 5350
+F 0 "C2" H 4760 5365 59  0000 L BNN
+F 1 "1uF" H 4760 5165 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4700 5350 50  0001 C CNN
+F 3 "" H 4700 5350 50  0001 C CNN
+	1    4700 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 5250
+Wire Wire Line
+	4700 5250 4600 5250
+$Comp
+L BAR30-SENSOR-eagle-import:GND #GND0105
+U 1 1 5D8E44A1
+P 4700 5650
+F 0 "#GND0105" H 4700 5650 50  0001 C CNN
+F 1 "GND" H 4600 5550 59  0000 L BNN
+F 2 "" H 4700 5650 50  0001 C CNN
+F 3 "" H 4700 5650 50  0001 C CNN
+	1    4700 5650
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 4850 0    85   ~ 0
+MCP1702
+Wire Wire Line
+	1900 4050 2500 4050
+Wire Wire Line
+	2500 3950 2150 3950
+$EndSCHEMATC
