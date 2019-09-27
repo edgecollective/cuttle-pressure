@@ -434,7 +434,7 @@
   (gr_text SCL (at 111.506 114.808) (layer F.SilkS) (tstamp 5CF7BA41)
     (effects (font (size 0.9 0.9) (thickness 0.2)))
   )
-  (gr_text U2 (at 133.5659 111.1758) (layer F.SilkS) (tstamp 5CF7B58C)
+  (gr_text U2 (at 123.7742 125.9713) (layer F.SilkS) (tstamp 5CF7B58C)
     (effects (font (size 0.8 0.8) (thickness 0.2)))
   )
   (gr_text U1 (at 151.13 107.696) (layer F.SilkS) (tstamp 5CF7B512)
